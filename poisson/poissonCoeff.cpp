@@ -871,12 +871,12 @@ void uvh(double* res, int t, double x, double y)
 
     /// \brief Diffusion
     double Diffusion(const DROPS::Point3DCL&, double){
-        return 1.e-6;
+        return 1.e-4;
     }
 
     /// \brief Initial value
     double InitialValue( const DROPS::Point3DCL& , double){
-        return 1e-5;
+        return 1e-6;
     }
 
     DROPS::Point3DCL Flowfield(const DROPS::Point3DCL& p, double t){
