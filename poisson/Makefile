@@ -41,6 +41,7 @@ ipdropsAD: \
 
 poissonP1:\
     ../poisson/poissonCoeff.o \
+    ../poisson/balakotaiah.o \
     ../poisson/ale.o \
     ../poisson/poissonP1.o ../geom/boundary.o ../geom/builder.o ../out/ensightOut.o\
     ../geom/simplex.o ../geom/multigrid.o ../num/unknowns.o ../geom/topo.o \
@@ -50,7 +51,7 @@ poissonP1:\
     ../out/vtkOut.o ../misc/bndmap.o ../geom/bndScalarFunctions.o\
     ../geom/bndVelFunctions.o\
     $(PAR_OBJ)
-	$(CXX) $(CXXFLAGS) $(LIBS) -o $@ $^ $(LFLAGS)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LFLAGS) $(LIBS)
 
 poissonP2:\
     ../geom/boundary.o ../geom/builder.o ../out/ensightOut.o\
