@@ -22,7 +22,7 @@
 
 	"andreasOpt":
 	{
-	 	"DataDir": 		"../Data/Rastaturin/Re18/16Hz",
+	 	"DataDir": 		"Data/Rastaturin/Re18/16Hz",
 		"starttime":		161,
 		"stoptime":		810
 	},
@@ -108,7 +108,7 @@
 	"VTK":
 	{
 		"VTKOut":		1, 	 //VTK output
-		"VTKDir":		"../vtk/Rastaturin/Re18/16Hz", 	 //local directory for vtk files
+		"VTKDir":		"vtk/Rastaturin/Re18/16Hz", 	 //local directory for vtk files
 		"VTKName":		"vtk", 	 //name of vtk files
 		"Binary":		1 	 //write out VTK files in binary format
 	}
